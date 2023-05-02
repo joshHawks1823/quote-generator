@@ -9,8 +9,8 @@ let getQuote = () => {
   fetch(url)
   .then((data) => data.json())
   .then((item) => {
-    console.log(item.content);
-    console.log(item.author);
+    // console.log(item.content);
+    // console.log(item.author);
     quote.innerText = item.content;
     author.innerText = item.author;
   })
